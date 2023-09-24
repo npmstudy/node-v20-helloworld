@@ -24,3 +24,9 @@ const person = process.argv[2];
 sayHi(person);
 
 ```
+
+## test
+
+```
+$ npm test
+```
