@@ -1,14 +1,17 @@
 {
   "name": "node-v20-helloworld",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "node-v20-helloworld": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "npmtudy",
   "license": "ISC",
   "files": [
     "index.js"
