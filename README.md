@@ -18,10 +18,14 @@ $ npm i --save node-v20-helloworld
 #! /usr/bin/env node
 import { sayHi } from 'node-v20-helloworld';
 
-// 调用异步函数
-const person = process.argv[2];
+async function main(){
+	// 调用异步函数
+	const person = process.argv[2];
 
-sayHi(person);
+	await sayHi(person);
+}
+
+main();
 
 ```
 
