@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 // 定义一个异步函数
 async function sayHi(name) {
   try {
