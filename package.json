@@ -5,10 +5,10 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "node-v20-helloworld": "index.js"
+    "node-v20-helloworld": "bin.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
   "keywords": [],
   "author": "npmtudy",

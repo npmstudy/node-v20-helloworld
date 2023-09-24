@@ -1,10 +1,9 @@
-#! /usr/bin/env node
 // 定义一个异步函数
-async function sayHi(name) {
+export async function sayHi(name) {
   try {
     // 调用Promise函数
     const text = await helloworld(name);
-    console.dir(text);
+    console.log(text);
   } catch (error) {
     console.log(error);
   }
@@ -16,8 +15,3 @@ function helloworld(name) {
     resolve(`Hello ${name}!`);
   });
 }
-
-// 调用异步函数
-const person = process.argv[2];
-
-sayHi(person);
