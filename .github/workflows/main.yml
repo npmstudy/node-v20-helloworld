@@ -1,10 +1,9 @@
 name: Node.js CI
 
-on: ['push', 'pull_request']
+on: ["push", "pull_request"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -12,7 +11,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: "20.x"
       - run: npm install
       - run: npm test
       - run: npm run test:coverage
@@ -23,4 +22,12 @@ jobs:
           COVERALLS_GIT_BRANCH: ${{ github.ref }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          base-path: './coverage'
+          base-path: "./coverage"
+  coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
