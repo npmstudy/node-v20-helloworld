@@ -1,5 +1,7 @@
 # nodejs-v20-helloworld
 
+![build status](https://github.com/npmstudy/node-v20-helloworld/actions/workflows/main.yml/badge.svg)
+
 - use Node.js v20 test runner
 - use c8 for coverage
 
