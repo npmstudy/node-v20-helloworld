@@ -37,6 +37,8 @@ main();
 ```
 $ npm test
 $ npm run test:watch
+
+// npm test --experimental-test-coverage
 $ npm run test:coverage
 ```
 
