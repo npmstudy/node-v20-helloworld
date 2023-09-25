@@ -2,6 +2,8 @@
 
 ![build status](https://github.com/npmstudy/node-v20-helloworld/actions/workflows/main.yml/badge.svg)
 
+[![codecov](https://codecov.io/github/npmstudy/node-v20-helloworld/graph/badge.svg?token=CSMN20E3W4)](https://codecov.io/github/npmstudy/node-v20-helloworld)
+
 - use Node.js v20 test runner
 - use c8 for coverage
 
