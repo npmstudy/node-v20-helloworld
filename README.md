@@ -19,6 +19,8 @@ $ node-v20-helloworld liangqi
 $ npm i --save node-v20-helloworld
 ```
 
+usage
+
 ```
 #! /usr/bin/env node
 import { sayHi } from 'node-v20-helloworld';
