@@ -1,6 +1,9 @@
 # nodejs-v20-helloworld
 
-## cli
+- use Node.js v20 test runner
+- use c8 for coverage
+
+## Cli
 
 ```
 $ npm i -g node-v20-helloworld
@@ -8,7 +11,7 @@ $ node-v20-helloworld liangqi
 'Hello liangqi!'
 ```
 
-## module
+## Module
 
 ```
 $ npm i --save node-v20-helloworld
@@ -29,7 +32,7 @@ main();
 
 ```
 
-## test
+## Test
 
 ```
 $ npm test
@@ -37,4 +40,6 @@ $ npm run test:watch
 $ npm run test:coverage
 ```
 
+## License
 
+MIT @ npmstudy
