@@ -8,7 +8,9 @@
     "node-v20-helloworld": "bin.js"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test --test-reporter spec",
+    "test:watch": "node --test --test-reporter spec --watch ./*.test.js",
+    "test:coverage": "c8 node --test"
   },
   "keywords": [],
   "author": "npmtudy",
@@ -18,5 +20,8 @@
   ],
   "engines": {
     "node": "^20"
+  },
+  "devDependencies": {
+    "c8": "^8.0.1"
   }
 }
