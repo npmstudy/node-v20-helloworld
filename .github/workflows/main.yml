@@ -15,12 +15,9 @@ jobs:
       - run: npm install
       - run: npm test
       - run: npm run test:coverage
-      - name: Coveralls
-        uses: coverallsapp/github-action@v2
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
         env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-          COVERALLS_GIT_BRANCH: ${{ github.ref }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          base-path: "./coverage"
-          debug: true
+          file: ./coverage/lcov.info
