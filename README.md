@@ -43,7 +43,7 @@ $ npm test
 // watch some dir
 $ npm run test:watch
 
-// npm test --experimental-test-coverage
+// npm test -- --experimental-test-coverage
 $ npm run test:coverage
 ```
 
