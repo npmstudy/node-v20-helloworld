@@ -12,3 +12,7 @@ test("test if works correctly", async function (t) {
 
   assert.strictEqual(log.mock.callCount(), 1);
 });
+
+test("test if works incorrectly", async function () {
+  assert.rejects(async () => await sayHi(), new Error("fail"));
+});
