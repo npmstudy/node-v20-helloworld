@@ -16,7 +16,8 @@
   "author": "npmtudy",
   "license": "ISC",
   "files": [
-    "index.js"
+    "index.js",
+    "bin.js"
   ],
   "engines": {
     "node": "^20"
